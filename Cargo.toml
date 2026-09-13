@@ -52,3 +52,43 @@ tokio = { version = "1.40", features = ["full"] }
 
 [dev-dependencies]
 tempfile = "3.12"
+
+[[test]]
+name = "unit_state_machine"
+path = "tests/unit/state_machine.rs"
+
+[[test]]
+name = "unit_device_filter"
+path = "tests/unit/device_filter.rs"
+
+[[test]]
+name = "unit_checksum"
+path = "tests/unit/checksum.rs"
+
+[[test]]
+name = "unit_buffer_pool"
+path = "tests/unit/buffer_pool.rs"
+
+[[test]]
+name = "unit_error_handling"
+path = "tests/unit/error_handling.rs"
+
+[[test]]
+name = "unit_partition_parser"
+path = "tests/unit/partition_parser.rs"
+
+[[test]]
+name = "integration_device_discovery"
+path = "tests/integration/device_discovery.rs"
+
+[[test]]
+name = "integration_clone_operation"
+path = "tests/integration/clone_operation.rs"
+
+[[test]]
+name = "integration_verification"
+path = "tests/integration/verification.rs"
+
+[[test]]
+name = "e2e_full_clone"
+path = "tests/e2e/full_clone.rs"

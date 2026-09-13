@@ -1,0 +1,25 @@
+name: Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: sudo apt-get install -y libudev-dev pkg-config libwebkit2gtk-4.1-dev
+      - name: Package release
+        run: ./scripts/package.sh
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: diskclone-linux
+          path: dist/
