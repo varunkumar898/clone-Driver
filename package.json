@@ -1,0 +1,16 @@
+{
+  "name": "diskclone-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "High-performance, safety-critical Linux disk cloning application",
+  "scripts": {
+    "dev": "npm --prefix ui run dev",
+    "build": "./scripts/build.sh",
+    "test": "./scripts/test.sh",
+    "lint": "./scripts/lint.sh",
+    "tauri": "cargo tauri",
+    "ui:build": "npm --prefix ui run build",
+    "ui:lint": "npm --prefix ui run lint"
+  },
+  "devDependencies": {}
+}
