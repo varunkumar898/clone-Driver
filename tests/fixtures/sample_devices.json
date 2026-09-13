@@ -1,0 +1,59 @@
+[
+  {
+    "path": "/dev/nvme0n1",
+    "sysfs_name": "nvme0n1",
+    "size_bytes": 512110190592,
+    "properties": {
+      "vendor": "Samsung",
+      "model": "Samsung SSD 980 PRO 500GB",
+      "serial_number": "S5GXNF0R123456",
+      "wwn": "eui.002538b311234567",
+      "logical_block_size": 512,
+      "physical_block_size": 512,
+      "is_rotational": false,
+      "is_read_only": false,
+      "is_removable": false
+    },
+    "is_system_disk": true,
+    "is_mounted": true,
+    "partition_table": null
+  },
+  {
+    "path": "/dev/sda",
+    "sysfs_name": "sda",
+    "size_bytes": 1000204886016,
+    "properties": {
+      "vendor": "Crucial",
+      "model": "CT1000MX500SSD1",
+      "serial_number": "2104E4F98765",
+      "wwn": "naa.500a0751e4f98765",
+      "logical_block_size": 512,
+      "physical_block_size": 4096,
+      "is_rotational": false,
+      "is_read_only": false,
+      "is_removable": false
+    },
+    "is_system_disk": false,
+    "is_mounted": false,
+    "partition_table": null
+  },
+  {
+    "path": "/dev/sdb",
+    "sysfs_name": "sdb",
+    "size_bytes": 2000398934016,
+    "properties": {
+      "vendor": "Seagate",
+      "model": "ST2000DM008-2FR102",
+      "serial_number": "W340XYZ1",
+      "wwn": "naa.5000c500b1234567",
+      "logical_block_size": 512,
+      "physical_block_size": 4096,
+      "is_rotational": true,
+      "is_read_only": false,
+      "is_removable": true
+    },
+    "is_system_disk": false,
+    "is_mounted": false,
+    "partition_table": null
+  }
+]
