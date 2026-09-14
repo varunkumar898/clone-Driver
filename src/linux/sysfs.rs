@@ -157,10 +157,9 @@ impl SysfsInspector {
             if name.starts_with(device_name)
                 && name.len() > device_name.len()
                 && name[device_name.len()..].starts_with(|c: char| c.is_ascii_digit() || c == 'p')
+                && entry.file_type().map(|t| t.is_dir()).unwrap_or(false)
             {
-                if entry.file_type().map(|t| t.is_dir()).unwrap_or(false) {
-                    partitions.push(name);
-                }
+                partitions.push(name);
             }
         }
         partitions.sort();
