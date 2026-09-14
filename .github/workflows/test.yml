@@ -12,6 +12,10 @@ jobs:
         with:
           node-version: '18'
       - name: Install dependencies
-        run: sudo apt-get install -y libudev-dev pkg-config libwebkit2gtk-4.1-dev
+        run: sudo apt-get install -y libudev-dev pkg-config libwebkit2gtk-4.1-dev e2fsprogs
+      - name: Setup test loop device
+        run: |
+          dd if=/dev/zero of=/tmp/test.img bs=1M count=100
+          sudo losetup /dev/loop0 /tmp/test.img || true
       - name: Run tests
         run: ./scripts/test.sh

@@ -90,6 +90,7 @@ cargo run -- scan
 
 ## Documentation
 
+- [USER_MANUAL.md](docs/USER_MANUAL.md): Complete desktop user guide and step-by-step instructions.
 - [ARCHITECTURE.md](ARCHITECTURE.md): Detailed architectural layers, state machine, and data flow.
 - [DESIGN.md](DESIGN.md): Technical decisions, chunk sizing, and buffer pool strategy.
 - [SECURITY.md](SECURITY.md): Threat model, safety guarantees, and privilege model.
