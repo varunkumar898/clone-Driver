@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: '18'
       - name: Install dependencies
-        run: sudo apt-get install -y libudev-dev pkg-config libwebkit2gtk-4.1-dev
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libudev-dev pkg-config libwebkit2gtk-4.1-dev
       - name: Package release
         run: ./scripts/package.sh
       - name: Upload Artifact
