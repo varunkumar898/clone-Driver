@@ -3,7 +3,7 @@
 use serde::{Deserialize, Serialize};
 
 /// Detailed hardware and operational properties of a block device.
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct DeviceProperties {
     pub vendor: String,
     pub model: String,

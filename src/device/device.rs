@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
 
 /// High-level representation of a physical block device (e.g. `/dev/sda`, `/dev/nvme0n1`).
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct BlockDevice {
     pub path: PathBuf,
     pub sysfs_name: String,

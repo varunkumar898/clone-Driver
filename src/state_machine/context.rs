@@ -20,7 +20,14 @@ impl StateMachineContext {
         Self::default()
     }
 
+    /// Clears all context fields, returning the context to a blank initial state.
     pub fn reset(&mut self) {
-        todo!("Phase 3: implement context reset")
+        *self = Self::new();
+    }
+
+    /// Clears context fields and stores an error message.
+    pub fn reset_with_error(&mut self, msg: impl Into<String>) {
+        *self = Self::new();
+        self.error_message = Some(msg.into());
     }
 }

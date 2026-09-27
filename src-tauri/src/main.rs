@@ -12,6 +12,10 @@ fn main() {
             commands::pause_clone,
             commands::resume_clone,
             commands::cancel_clone,
+            commands::confirm_visual_check,
+            commands::confirm_text_input,
+            commands::final_safety_check,
+            commands::check_recovery_checkpoint,
             commands::verify_clone,
             commands::get_logs
         ])

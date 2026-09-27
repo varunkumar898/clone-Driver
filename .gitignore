@@ -4,13 +4,16 @@
 Cargo.lock.backup
 
 # Node / Frontend
+node_modules
 node_modules/
+**/node_modules
 dist/
 dist-ssr/
 *.local
 .npm
 .eslintcache
 .stylelintcache
+
 
 # Tauri
 src-tauri/target/

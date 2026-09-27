@@ -9,7 +9,7 @@ pub enum PartitionScheme {
     Unknown,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct PartitionEntry {
     pub index: u32,
     pub start_lba: u64,
@@ -21,7 +21,7 @@ pub struct PartitionEntry {
     pub is_bootable: bool,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct PartitionTable {
     pub scheme: PartitionScheme,
     pub sector_size: u32,
